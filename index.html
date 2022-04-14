@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxy'Com</title>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <!--Librarie Police ecriture-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--Librarie carte-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    
+    <style>
+        .i{
+        fill: rgba(255, 255, 255, 1);
+        transition: 0.5s;
+        }
+    </style>
+    
+</head>
+<body>
+    <section class="fond1">
+        <video class="video" src="Img/Video.mp4" autoplay="autoplay" muted="" loop="infinite"></video>
+
+        <header>
+            <img class="image" src="Img/logo1.png" alt="Auxycom">
+            <a class="head headm" href="index.html">Menu</a>
+            <a class="head" href="Services.html">Services</a>
+            <a class="head" href="#Ap" >A propos</a>
+            <a class="head" href="#real">Realisations</a>
+            <a class="head headd" href="#ct">Contact</a>
+            <a class="headF" href="#">Fr</a>
+            <a class="headE" href="#">En</a>
+        </header>
+
+        <div class="Centre">
+            <h1 class="Auxy">AUXY'COM</h1>
+            <div class="Slogan">AFIN DE REPONDRE A VOS BESOINS</div>
+            <div class="bouton">
+                <a class="bt0 btn1" href="Services.html">Services</a>
+                <a class="bt0 btn2" href="#Ap">A propos</a>
+            </div>
+        </div>
+
+        <div class="sociaux">
+            <a href="#"><svg class="t" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+            <a class="facebook" href="#"><svg class="f" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"> <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+            <a href="#"><svg class="i" height="25" viewBox="0 0 511 511" width="25" xmlns="http://www.w3.org/2000/svg"><path d="m510.949219 150.5c-1.199219-27.199219-5.597657-45.898438-11.898438-62.101562-6.5-17.199219-16.5-32.597657-29.601562-45.398438-12.800781-13-28.300781-23.101562-45.300781-29.5-16.296876-6.300781-34.898438-10.699219-62.097657-11.898438-27.402343-1.300781-36.101562-1.601562-105.601562-1.601562s-78.199219.300781-105.5 1.5c-27.199219 1.199219-45.898438 5.601562-62.097657 11.898438-17.203124 6.5-32.601562 16.5-45.402343 29.601562-13 12.800781-23.097657 28.300781-29.5 45.300781-6.300781 16.300781-10.699219 34.898438-11.898438 62.097657-1.300781 27.402343-1.601562 36.101562-1.601562 105.601562s.300781 78.199219 1.5 105.5c1.199219 27.199219 5.601562 45.898438 11.902343 62.101562 6.5 17.199219 16.597657 32.597657 29.597657 45.398438 12.800781 13 28.300781 23.101562 45.300781 29.5 16.300781 6.300781 34.898438 10.699219 62.101562 11.898438 27.296876 1.203124 36 1.5 105.5 1.5s78.199219-.296876 105.5-1.5c27.199219-1.199219 45.898438-5.597657 62.097657-11.898438 34.402343-13.300781 61.601562-40.5 74.902343-74.898438 6.296876-16.300781 10.699219-34.902343 11.898438-62.101562 1.199219-27.300781 1.5-36 1.5-105.5s-.101562-78.199219-1.300781-105.5zm-46.097657 209c-1.101562 25-5.300781 38.5-8.800781 47.5-8.601562 22.300781-26.300781 40-48.601562 48.601562-9 3.5-22.597657 7.699219-47.5 8.796876-27 1.203124-35.097657 1.5-103.398438 1.5s-76.5-.296876-103.402343-1.5c-25-1.097657-38.5-5.296876-47.5-8.796876-11.097657-4.101562-21.199219-10.601562-29.398438-19.101562-8.5-8.300781-15-18.300781-19.101562-29.398438-3.5-9-7.699219-22.601562-8.796876-47.5-1.203124-27-1.5-35.101562-1.5-103.402343s.296876-76.5 1.5-103.398438c1.097657-25 5.296876-38.5 8.796876-47.5 4.101562-11.101562 10.601562-21.199219 19.203124-29.402343 8.296876-8.5 18.296876-15 29.398438-19.097657 9-3.5 22.601562-7.699219 47.5-8.800781 27-1.199219 35.101562-1.5 103.398438-1.5 68.402343 0 76.5.300781 103.402343 1.5 25 1.101562 38.5 5.300781 47.5 8.800781 11.097657 4.097657 21.199219 10.597657 29.398438 19.097657 8.5 8.300781 15 18.300781 19.101562 29.402343 3.5 9 7.699219 22.597657 8.800781 47.5 1.199219 27 1.5 35.097657 1.5 103.398438s-.300781 76.300781-1.5 103.300781zm0 0"/><path d="m256.449219 124.5c-72.597657 0-131.5 58.898438-131.5 131.5s58.902343 131.5 131.5 131.5c72.601562 0 131.5-58.898438 131.5-131.5s-58.898438-131.5-131.5-131.5zm0 216.800781c-47.097657 0-85.300781-38.199219-85.300781-85.300781s38.203124-85.300781 85.300781-85.300781c47.101562 0 85.300781 38.199219 85.300781 85.300781s-38.199219 85.300781-85.300781 85.300781zm0 0"/><path d="m423.851562 119.300781c0 16.953125-13.746093 30.699219-30.703124 30.699219-16.953126 0-30.699219-13.746094-30.699219-30.699219 0-16.957031 13.746093-30.699219 30.699219-30.699219 16.957031 0 30.703124 13.742188 30.703124 30.699219zm0 0"/></svg></a>
+        </div>
+    </section>
+    
+    <section class="fond2" id="Ap">
+        <div class="cadre">
+            <h2 class="Apropos">QUI SOMMES NOUS ?</h2>
+            <div class="pres">Nous sommes un groupe de 6 étudiants en DUT Métiers du Multimédia et de l’Internet dans l’IUT de Mulhouse. Notre équipe est composée de Ana GEORGIEVSKI, Hugo DEGAEFF, Mélodie CHANTELY, Lily JUDITH, Romain SHILLING et Louzna BENSALAH car cette année, dans le cadre d’un projet tutoré, nous avons pour objectif de créer un site agence. C’est ainsi que nous nous sommes allié pour en créer une agence qui nous représente au maximum. Voilà comment Auxy’Com est né !</div>
+            <a class="co contact" href="#ct">Contact</a>
+        
+            <div class="grid1">
+                <div>
+                    <a href="https://youtu.be/uLatiS2kjt8" target="_blank">
+                        <video class="pause" src="Img/romain.mp4" autoplay="autoplay" muted="" loop="infinite"></video>
+                    </a>
+                </div>
+                <div>
+                    <div class="Apropos">POURQUOI NOUS CHOISIR ?</div>
+                    <div class="txtpause">Nos compétences techniques, nos connaissances et notre créativité permettent d’assurer des solutions fonctionnelles et réussi artistiquement. Chacune de nos créations est réfléchis afin qu’elle ait le meilleur impacte que possible. Notre agence a pour but d’offrir nos prestations, tout en respectant avant tout l’écologique car c’est une cause qui nous tient à cœur  au vue du contexte écologique !</div>
+                    <a class="contact" href="Services.html">Services</a>
+                </div>
+            </div>
+
+            <div class="Apropos Decal">NOS VALEURS</div>
+            <div class="txtpause">Nous avons choisi de fonder une agence de communication respectant au maximum les valeurs écologiques. Un choix très audacieux dans ce domaine mais que nous sommes prêts à assumer. L’une des valeurs principales de l’entreprise étant l’éco-responsabilité, les outils qui sont utilisés respecteront la planète comme par exemple l’utilisation d’un hébergeur écologique, de papier recyclé essentiel pour une communication écoresponsable. Aujourd’hui, si Internet était un pays il serait le 3ème plus gros consommateur d’électricité au monde, ainsi il entraîne une émission de carbone très élevée. Tout cela représente indéniablement un danger pour la planète et ses habitants ces donc nous agissons à notre échelle pour éviter le pire.</div>
+            <div class="log">
+                <img class="ecart" src="Img/logof.png" alt="code ecologique">
+                <img class="ecart ec1"  src="Img/logof1.png" alt="papier recyclé">
+                <img class="ecart"  src="Img/logof2.png" alt="recyclage">
+            </div>
+        </div>
+    </section>
+
+    <section class="fond2" id="real">
+        <h2 class="Real">NOS RÉALISATIONS</h2>
+        <div class="grid2">
+            
+            <div class="description">                                   <!--Ensemble pour gerer la position-->
+                <img class="exemple" src="Img/a.jpg" alt="Photo">
+                <div class="carre">                                     <!--Fond noir sur la photo-->
+                    <div class="txt">Photographie</div>
+                </div>
+            </div>
+            
+            <div class="description">
+            <img class="exemple" src="Img/b-min.jpg" alt="Carte de visite">
+                <div class="carre">
+                    <div class="txt">Carte de visite</div>
+                </div>
+            </div>
+            
+            <div class="description">
+            <img class="exemple" src="Img/c-min.jpg" alt="Site web">
+                <div class="carre">
+                    <div class="txt">Site web</div>
+                </div>
+            </div>
+
+            <div class="description">
+            <img class="exemple" src="Img/d-min.jpg" alt="Logo">
+                <div class="carre">
+                    <div class="txt">Logo</div>
+                </div>
+            </div>
+            
+            <div class="description">
+            <img class="exemple" src="Img/e-min.jpg" alt="Flyers">
+                <div class="carre">
+                    <div class="txt">Carte de restaurant</div>
+                </div>
+            </div>
+            
+            <div class="description">
+            <img class="exemple" src="Img/f-min.jpg" alt="Site web">
+                <div class="carre">
+                    <div class="txt">Site web</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="fond3">
+        <h2 class="equipe">UNE EQUIPE <span class="in">INÉGALABLE</span></h2>
+
+            <div class="grid3">
+                <div>
+                    <div class="cadrage">
+                        <img class="photo" src="Img/Ana_serieuse.jpg" alt="Ana infographiste">
+                        <img class="photo drole" src="Img/Ana_folle.jpg" alt="Ana infographiste">
+                    </div>
+                    <p class="txt txt2">Ana</p>
+                    <p class="txt txt3">Infographiste et rédactrice là pour vous aider <br> à créer votre identité visuelle.</p>
+                </div>
+
+                <div>
+                    <div class="cadrage">
+                        <img class="photo" src="Img/Melodie_serieuse.jpg" alt="Melodie Photographe">
+                        <img class="photo drole" src="Img/Melodie_folle.jpg" alt="Melodie Photographe">
+                    </div>
+                    <p class="txt txt2">Melodie</p>
+                    <p class="txt txt3">Rédactrice, avec elle vous n'aurez pas à vous soucié elle<br> saura prendre en charge vos écrits à la perfection</p>
+                </div>
+
+                <div>
+                    <div class="cadrage">
+                        <img class="photo" src="Img/Lily_serieuse.jpg" alt="Lily Photographe">
+                        <img class="photo drole" src="Img/Lily_folle.jpg" alt="Lily Photographe">
+                    </div>
+                    <p class="txt txt2">Lily</p>
+                    <p class="txt txt3">Photographe, besoin d'un visuel ou d'une retouche, elle<br> est là pour illustrer vos pages et affiner vos photos.</p>
+                </div>
+
+                <div>
+                    <div class="cadrage">
+                        <img class="photo" src="Img/Louzna_serieuse.jpg" alt="Louzna infographiste">
+                        <img class="photo drole" src="Img/Louzna_folle.jpg" alt="Louzna infographiste">
+                    </div>
+                    <p class="txt txt2">Louzna</p>
+                    <p class="txt txt3">Infographiste, besoin d'un flyer ou d'une brochure,<br> elle saura les réaliser sans soucis</p>
+                </div>
+
+                <div>
+                    <div class="cadrage">
+                        <img class="photo" src="Img/Romain_serieux.jpg" alt="Romain vidéaste">
+                        <img class="photo drole" src="Img/Romain_fou.jpg" alt="Romain vidéaste">
+                    </div>
+                    <p class="txt txt2">Romain</p>
+                    <p class="txt txt3">Réalisateur et monteur vidéo, l'audiovisuel plus qu'une<br> passion, il n'aura aucune difficulté à réaliser votre projet.</p>
+                </div>
+
+                <div>
+                    <div class="cadrage">
+                        <img class="photo" src="Img/Hugo_serieux.jpg" alt="Hugo développeur web">
+                        <img class="photo drole" src="Img/Hugo_fou.jpg" alt="Hugo développeur web">
+                    </div>
+                    <p class="txt txt2">Hugo</p>
+                    <p class="txt txt3">Développeur web là pour vous créer un site <br> optimisé et d'une grande qualité visuelle</p>
+                </div>
+            </div>
+
+    </section>
+
+    
+    
+    
+    <footer class="bas" id="ct">
+        <div class="gridfm">                                  <!--Grid-->
+            
+            <div>
+                <div class="contacter">NOUS CONTACTER</div>   <!--Formulaire-->
+                <form method="post" action="">
+                <input type="text" class="nom" placeholder="Nom">
+                <input type="text" class="nom g" placeholder="Prenom">
+                <input type="text" class="nom h" placeholder="Adresse mail">
+                <textarea class="nom h b" placeholder="Message"></textarea>
+                <button class="Envoyer">Envoyer</button>
+                </form>
+            </div>
+
+            <div class="carte">
+                <div id="mapid"></div>                        <!--Carte-->
+            </div>
+  
+        </div>
+        
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+
+    <script src="JS/script.js"></script>
+</body>
+</html>

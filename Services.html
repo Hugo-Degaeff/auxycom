@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="Styles/styles_services.css">
+    <!--Librarie Police ecriture-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--Librarie carte-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    
+</head>
+<body>
+
+    <header>
+        <img class="image" src="Img/logo1.png" alt="Auxycom">
+        <a class="head headm" href="index.html">Menu</a>
+        <a class="head" href="">Services</a>
+        <a class="head" href="index.html #Ap" >A propos</a>
+        <a class="head" href="index.html #real">Realisations</a>
+        <a class="head headd" href="#ct">Contact</a>
+        <a class="headF" href="">Fr</a>
+        <a class="headE" href="">En</a>
+    </header>
+    
+    <h2>NOS SERVICES</h2>
+
+    <section class="fnd">
+        <div class = "choix">
+            <div class="dec">
+                <div class="cadrage">
+                    <img class="image2" src="Img/Infographiste.jpg" alt="">
+                    <div class="job">INFOGRAPHISTE</div>
+                    <a class="ouvrir" href="Infographie.html">OUVRIR</a>
+                </div>
+            </div>
+
+            <div class="dec">
+                <div class="cadrage">
+                    <img class="image2" src="Img/Develeppoment_Web.jpg" alt="">
+                    <div class="job">DEVELOPPEUR WEB</div>
+                    <a class="ouvrir" href="Dev_Web.html">OUVRIR</a>
+                </div>
+            </div>
+
+            <div class="dec">
+                <div class="cadrage">
+                    <img class="image2" src="Img/Montage_Video.jpg" alt="">
+                    <div class="job">MONTAGE VIDEO</div>
+                    <a class="ouvrir" href="Audiovisuel.html">OUVRIR</a>
+                </div>
+            </div>
+
+            <div class="dec">
+                <div class="cadrage">
+                    <img class="image2" src="Img/Shooting_Photo_2.jpg" alt="">
+                    <div class="job">SHOOTING PHOTO</div>
+                    <a class="ouvrir" href="Photographie.html">OUVRIR</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bas" id="ct">
+        <div class="gridfm">                                  <!--Grid-->
+            
+            <div>
+                <div class="contacter">NOUS CONTACTER</div>   <!--Formulaire-->
+                <form method="post" action="">
+                <input type="text" class="nom" placeholder="Nom">
+                <input type="text" class="nom g" placeholder="Prenom">
+                <input type="text" class="nom h" placeholder="Adresse mail">
+                <textarea class="nom h b" placeholder="Message"></textarea>
+                <button class="Envoyer">Envoyer</button>
+                </form>
+            </div>
+
+            <div class="carte">
+                <div id="mapid"></div>                        <!--Carte-->
+            </div>
+  
+        </div>
+        
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+
+    <script src="JS/script.js"></script>
+
+
+</body>
+</html>

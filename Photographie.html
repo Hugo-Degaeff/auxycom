@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auxy'Com</title>
+    <link rel="stylesheet" href="Styles/styles_infographie.css">
+    <!--Librarie Police ecriture-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <!--Librarie carte-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    
+    <style>
+        .i{
+        fill: rgba(255, 255, 255, 1);
+        transition: 0.5s;
+        }
+    </style>
+    
+</head>
+<body>
+    <section class="fond1">
+
+        <header>
+            <img class="image" src="Img/logo1.png" alt="Auxycom">
+            <a class="head" href="index.html">Menu</a>
+            <a class="head heads" href="Services.html">Services</a>
+            <a class="head" href="index.html #Ap" >A propos</a>
+            <a class="head" href="index.html #real">Realisations</a>
+            <a class="head headd" href="#ct">Contact</a>
+            <a class="headF" href="">Fr</a>
+            <a class="headE" href="">En</a>
+        </header>
+        
+        <h2>SHOOTING PHOTO</h2>
+    </section>
+
+    <section class="dec">
+        <div class="creation">
+            <div class="separe">
+                <div class="titre">Shooting photo portrait :</div>
+                <div class="txt">Des photos de portrait de qualité où l’on pourra vous conseiller quant à la pose à adopter et pourra même vous aider à choisir une tenue adéquate.</div>
+            </div>
+            
+            <div class="separe">
+                <div class="titre">Photographie immobilière :</div>
+                <div class="txt">Pour capturer et mettre en valeur vos établissement et voir où vous vous situer pour avoir plus de visibilité.</div>
+            </div>
+
+            <div class="separe">
+                <div class="titre">Retouche photo :</div>
+                <div class="txt">Pour améliorer la colorimétrie de l'image et obtenir des photos de qualité !</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dec">
+
+        <div class="creation2">
+            <div class="separe2 txt">
+                <div class="titre2 align">Prestations personnalisées</div>
+                <div class="plus">Portrait (10 min):<b> 30€</b></div>
+                <div class="plus">Portait (1 à 2 heure) : A partir de <b>220€</b></div>
+                <div class="plus">Photographie immobilière : A partir de <b>200€</b></div>
+                <div class="plus">Retouche Photo : A partir de <b>35€/h</b></div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="fond2" id="real">
+        <h2 class="Real">NOS DERNIERES RÉALISATIONS</h2>
+        <div class="grid2">
+            
+            <div class="description">                                   <!--Ensemble pour gerer la position-->
+                <img class="exemple" src="Img/Pht.jpg" alt="Photo de mariage">
+                <div class="carre">                                     <!--Fond noir sur la photo-->
+                    <div class="txt1">Mariage</div>
+                </div>
+            </div>
+            
+            <div class="description">
+            <img class="exemple" src="Img/pht2.jpg" alt="Photo de paysage">
+                <div class="carre">
+                    <div class="txt1">Paysage</div>
+                </div>
+            </div>
+            
+            <div class="description">
+            <img class="exemple" src="Img/pht3.jpg" alt="Photo de sport">
+                <div class="carre">
+                    <div class="txt1">Compétition de VTT</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="bas" id="ct">
+        <div class="gridfm">                                  <!--Grid-->
+            
+            <div>
+                <div class="contacter">NOUS CONTACTER</div>   <!--Formulaire-->
+                <form method="post" action="">
+                <input type="text" class="nom" placeholder="Nom">
+                <input type="text" class="nom g" placeholder="Prenom">
+                <input type="text" class="nom h" placeholder="Adresse mail">
+                <textarea class="nom h b" placeholder="Message"></textarea>
+                <button class="Envoyer">Envoyer</button>
+                </form>
+            </div>
+
+            <div class="carte">
+                <div id="mapid"></div>                        <!--Carte-->
+            </div>
+  
+        </div>
+        
+    </footer>
+    
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin="">
+    </script>
+
+    <script src="JS/script.js"></script>
+        
+
+</body>
+</html>
